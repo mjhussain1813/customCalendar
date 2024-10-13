@@ -62,7 +62,8 @@ const CustomCalendar = () => {
     };
 
     return (
-        <div className="calendar">
+        <div className='calendar-container '>
+             <div className="calendar">
             <div className="header">
                 <select value={selectedYear} onChange={handleYearChange}>
                     {Array.from({ length: 100 }, (_, i) => (
@@ -146,6 +147,8 @@ const CustomCalendar = () => {
                 </div>
             )}
         </div>
+        </div>
+       
     );
 };
 

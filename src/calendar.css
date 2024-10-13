@@ -1,6 +1,14 @@
+.calendar-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full height of the viewport */
+    background-color: #f0f0f0; /* Optional: background color for contrast */
+}
+
 .calendar {
     width: 300px;
-    margin: 0 auto;
+    margin: 0; /* Remove margin since flexbox will center it */
     border: 2px solid #007bff; /* Set your desired border color here */
     border-radius: 4px;
     padding: 10px;
