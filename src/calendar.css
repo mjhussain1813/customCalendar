@@ -1,0 +1,86 @@
+.calendar {
+    width: 300px;
+    margin: 0 auto;
+    border: 2px solid #007bff; /* Set your desired border color here */
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.view-button {
+    padding: 5px 10px;
+    background-color: #007bff; /* Default button color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.view-button:hover {
+    background-color: #0056b3; /* Darker on hover */
+}
+
+.view-button.active {
+    background-color: #0056b3; /* Darker when active */
+}
+
+.days-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-top: 10px;
+}
+
+.day-name {
+    font-weight: bold;
+    text-align: center;
+}
+
+.day {
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.current-month {
+    background-color: #f0f0f0;
+}
+
+.other-month {
+    color: #ccc;
+}
+
+.selected {
+    background-color: #007bff;
+    color: white;
+}
+
+.selected-date-wrapper {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.years-grid {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+}
+
+.month {
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ccc; /* Add border for better visibility */
+    margin: 5px; /* Spacing between months */
+    transition: background-color 0.3s; /* Smooth background change */
+}
+
+.month:hover {
+    background-color: #f0f0f0; /* Highlight on hover */
+}
